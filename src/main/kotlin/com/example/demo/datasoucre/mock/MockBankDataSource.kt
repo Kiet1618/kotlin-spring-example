@@ -14,4 +14,6 @@ class MockBankDataSource : BankDataSource {
                         )
 
         override public fun retrieveBanks(): Collection<Bank> = banks
+        override public fun retrieveBank(accountNumber: String): Bank =
+                        banks.first() { it.accountNumber == accountNumber }
 }
