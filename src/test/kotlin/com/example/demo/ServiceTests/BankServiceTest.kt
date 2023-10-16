@@ -18,7 +18,7 @@ internal class BankServiceTest {
         // given
         // every { dataSource.retrieveBanks() } returns emptyList()
         // when
-        val banks = bankService.getBanks()
+        bankService.getBanks()
         // then
         verify(exactly = 1) { dataSource.retrieveBanks() }
     }
