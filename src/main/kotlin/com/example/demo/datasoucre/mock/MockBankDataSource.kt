@@ -13,5 +13,5 @@ class MockBankDataSource : BankDataSource {
                                         Bank("5678", 0.0, 100),
                         )
 
-        override fun getBanks(): Collection<Bank> = banks
+        override public fun retrieveBanks(): Collection<Bank> = banks
 }
